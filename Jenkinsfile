@@ -1,4 +1,5 @@
-node {
+pipeline {
+    node {
     def app
 
     stage('Clone repository') {
@@ -27,4 +28,5 @@ node {
             } 
                 echo "Trying to Push Docker Build to DockerHub"
     }
+}
 }
