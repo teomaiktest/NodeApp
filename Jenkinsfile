@@ -14,7 +14,7 @@ node {
 
         app = docker.build("teomaik/nodeapp")
     }
-
+ 
     stage('Test image') {
 
         app.inside {
